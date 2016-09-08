@@ -1,8 +1,8 @@
 <?php
 
-namespace TonicHealthCheck\Check\ActiveMQ\Connect;
+namespace TonicHealthCheck\Check\ActiveMQ\ConnectOldClient;
 
-use Stomp\StatefulStomp as StatefulStomp;
+use Stomp\Stomp;
 use Stomp\Exception\StompException;
 use TonicHealthCheck\Check\ActiveMQ\AbstractActiveMQCheck;
 
@@ -18,18 +18,18 @@ class ActiveMQConnectCheck extends AbstractActiveMQCheck
     const TEST_TIME_OUT = 10;
 
     /**
-     * @var mixed
+     * @var Stomp
      */
-    protected $statefulStomp;
+    protected $client;
 
     /**
-     * @param string        $checkNode
-     * @param mixed         $statefulStomp
+     * @param string $checkNode
+     * @param Stomp  $client
      */
-    public function __construct($checkNode, $statefulStomp)
+    public function __construct($checkNode, $client)
     {
         parent::__construct($checkNode);
-        $this->setStatefulStomp($statefulStomp);
+        $this->setClient($client);
     }
 
     /**
@@ -40,25 +40,25 @@ class ActiveMQConnectCheck extends AbstractActiveMQCheck
     public function performCheck()
     {
         try {
-            $this->getStatefulStomp()->getClient()->connect();
+            $this->getClient()->connect();
         } catch (StompException $e) {
             throw  ActiveMQConnectCheckException::connectProblem($e);
         }
     }
 
     /**
-     * @return StatefulStomp
+     * @return Stomp
      */
-    public function getStatefulStomp()
+    public function getClient()
     {
-        return $this->statefulStomp;
+        return $this->client;
     }
 
     /**
-     * @param StatefulStomp $statefulStomp
+     * @param Stomp $client
      */
-    protected function setStatefulStomp(StatefulStomp $statefulStomp)
+    protected function setClient(Stomp $client)
     {
-        $this->statefulStomp = $statefulStomp;
+        $this->client = $client;
     }
 }

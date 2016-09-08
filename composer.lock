@@ -1115,12 +1115,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tonicforhealth/health-checker-check.git",
-                "reference": "f160a377595c6833e2101ee44f284333a9acf2f1"
+                "reference": "7059ae478e0f8dd816aca1904347d8a77a10a836"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tonicforhealth/health-checker-check/zipball/f160a377595c6833e2101ee44f284333a9acf2f1",
-                "reference": "f160a377595c6833e2101ee44f284333a9acf2f1",
+                "url": "https://api.github.com/repos/tonicforhealth/health-checker-check/zipball/7059ae478e0f8dd816aca1904347d8a77a10a836",
+                "reference": "7059ae478e0f8dd816aca1904347d8a77a10a836",
                 "shasum": ""
             },
             "require": {
