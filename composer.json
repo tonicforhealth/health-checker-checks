@@ -16,15 +16,22 @@
         }
     ],
     "require": {
-        "elasticsearch/elasticsearch": "^2.1",
-        "predis/predis": "^1.1",
-        "stomp-php/stomp-php": "^3.0|^4.1",
-        "doctrine/orm": "^2.4",
         "tonicforhealth/health-checker-check": "^0.2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.8|~5.3",
-        "phpunit/dbunit": "~2.0"
+        "phpunit/dbunit": "~2.0",
+        "elasticsearch/elasticsearch": "^2.1",
+        "predis/predis": "^1.1",
+        "stomp-php/stomp-php": "^4.1",
+        "doctrine/orm": "^2.4"
+
+    },
+    "suggest": {
+        "elasticsearch/elasticsearch": "Allows to perform elasticsearch checks",
+        "predis/predis": "Allows to perform redis checks",
+        "stomp-php/stomp-php": "Allows to perform activeMQ(stomp) checks",
+        "doctrine/orm": "Allows to perform db(mySQL) checks"
     },
     "repositories": [
         {
