@@ -11,7 +11,7 @@ use TonicHealthCheck\Check\DB\PDOFactory;
  */
 class DBConnectCheck extends AbstractDBCheck
 {
-    const CHECK = 'db-connect-performCheck';
+    const CHECK = 'db-connect-check';
 
     /**
      * @var PDOFactory

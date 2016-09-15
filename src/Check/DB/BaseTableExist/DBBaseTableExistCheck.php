@@ -13,7 +13,7 @@ use TonicHealthCheck\Check\DB\PDOFactory;
  */
 class DBBaseTableExistCheck extends AbstractDBCheck
 {
-    const CHECK = 'db-base-table-exist-performCheck';
+    const CHECK = 'db-base-table-exist-check';
     const DEFAULT_SQL_GET_ALL_TABLE = 'SHOW TABLES';
 
     /**

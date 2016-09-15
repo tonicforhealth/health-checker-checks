@@ -11,7 +11,7 @@ use TonicHealthCheck\Check\Redis\AbstractRedisCheck;
  */
 class RedisConnectCheck extends AbstractRedisCheck
 {
-    const CHECK = 'redis-connect-performCheck';
+    const CHECK = 'redis-connect-check';
 
     /**
      * @var PredisClient

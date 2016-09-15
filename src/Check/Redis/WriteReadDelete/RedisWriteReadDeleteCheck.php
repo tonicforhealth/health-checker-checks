@@ -14,7 +14,7 @@ use TonicHealthCheck\Check\Redis\WriteReadDelete\Exception\RedisWriteReadCheckEx
  */
 class RedisWriteReadDeleteCheck extends AbstractRedisCheck
 {
-    const CHECK = 'redis-write-read-delete-performCheck';
+    const CHECK = 'redis-write-read-delete-check';
 
     /**
      * @var PredisClient

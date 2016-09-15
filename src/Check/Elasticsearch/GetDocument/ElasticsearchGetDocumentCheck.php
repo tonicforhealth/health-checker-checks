@@ -12,7 +12,7 @@ use TonicHealthCheck\Check\Elasticsearch\AbstractElasticsearchCheck;
  */
 class ElasticsearchGetDocumentCheck extends AbstractElasticsearchCheck
 {
-    const CHECK = 'elasticsearch-get-document-performCheck';
+    const CHECK = 'elasticsearch-get-document-check';
 
     const INDEX_GET_SIZE = 5;
 

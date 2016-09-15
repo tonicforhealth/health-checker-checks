@@ -11,7 +11,7 @@ use TonicHealthCheck\Check\ActiveMQ\AbstractActiveMQCheck;
  */
 class ActiveMQConnectCheck extends AbstractActiveMQCheck
 {
-    const CHECK = 'activemq-connect-performCheck';
+    const CHECK = 'activemq-connect-check';
 
     const TEST_DESTINATION = '/queue/test';
     const TEST_BODY = 'test';

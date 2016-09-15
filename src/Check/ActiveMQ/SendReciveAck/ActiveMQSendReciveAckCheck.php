@@ -15,7 +15,7 @@ use TonicHealthCheck\Check\ActiveMQ\SendReciveAck\Exception\ActiveMQSendReciveAc
  */
 class ActiveMQSendReciveAckCheck extends AbstractActiveMQCheck
 {
-    const CHECK = 'activemq-send-recive-ack-performCheck';
+    const CHECK = 'activemq-send-recive-ack-check';
 
     const TEST_DESTINATION = '/queue/test';
     const TEST_BODY = 'The story is about a plain conjurer and a starship captain. It takes place in a galaxy-spanning theocracy.';
